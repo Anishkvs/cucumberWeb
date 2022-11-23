@@ -12,22 +12,22 @@ public class stepDefinitions {
         System.out.println("Navigate to login page");
     }
 
-    @When("^User enter into application with username and password$")
-    public void user_enter_into_application_with_username_and_password() throws Throwable {
-    	 System.out.println("user enter username and password");
+    @When("^User enter into application with \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void user_enter_into_application_with_something_and_something(String strArg1, String strArg2) throws Throwable {
+        System.out.println(strArg1);
+        System.out.println(strArg2);
     }
-
+    
     @Then("^Home page is populated$")
     public void home_page_is_populated() throws Throwable {
     	 System.out.println("Navigate to Home page");
     }
-
-    @And("^Card is displayed$")
-    public void card_is_displayed()
-    {
-    	 System.out.println("Card is viewed");
-      
+    
+    
+    @And("^Card displayed is \"([^\"]*)\"$")
+    public void card_displayed_is_something(String strArg1) throws Throwable {
+    	System.out.println(strArg1);
     }
-
+   
 }
 

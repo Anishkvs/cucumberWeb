@@ -28,6 +28,8 @@ public class stepDefinitions {
     public void card_displayed_is_something(String strArg1) throws Throwable {
     	System.out.println(strArg1);
     }
+    
+    
    
 }
 
